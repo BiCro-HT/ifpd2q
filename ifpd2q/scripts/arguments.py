@@ -4,7 +4,7 @@
 """
 
 import argparse
-from ifpd2 import __version__
+from ifpd2q import __version__
 import sys
 
 # import multiprocessing as mp
