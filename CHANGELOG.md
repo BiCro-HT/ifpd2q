@@ -35,3 +35,6 @@ Fix the relative imports
 
 ### Make it into stand alone repo
 https://github.com/BiCro-HT/ifpd2_new for further ease of use and modularity.
+
+Rename the package as ifpd2q (q as in Quentin's version)
+    * this way we can make it pip installable as there is already another ifpd2 on PyPi by GGirelli.
