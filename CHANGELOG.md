@@ -29,5 +29,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## Changes by Zafer Kosar
 
 Fix the relative imports
-imports literally relied on the previous installations (not the local one)
-change logging.py to loggingg with double 'g' to prevent import problems due to built in logging library. 
+* imports literally relied on the previous installations (not the local one)
+    * lack of modularity and compatibiliy 
+* change logging.py to loggingg with double 'g' to prevent import problems due to built in logging library. 
+
+### Make it into stand alone repo
+https://github.com/BiCro-HT/ifpd2_new for further ease of use and modularity.
