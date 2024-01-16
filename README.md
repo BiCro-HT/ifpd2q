@@ -1,6 +1,6 @@
 # iFISH Probe Design (II)
 
-**Zafer's fork from Quentin's fork from Gabrile's implementation**
+**Zafer's fork from Quentin's fork from Gabriele's implementation**
 
 [![DOI](https://zenodo.org/badge/210782569.svg)](https://zenodo.org/badge/latestdoi/210782569) ![](https://img.shields.io/github/license/ggirelli/ifpd2.svg?style=flat) ![](https://github.com/ggirelli/ifpd2/workflows/Python%20package/badge.svg?branch=main&event=push)  
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ifpd2) ![PyPI - Format](https://img.shields.io/pypi/format/ifpd2) ![PyPI - Status](https://img.shields.io/pypi/status/ifpd2)  
