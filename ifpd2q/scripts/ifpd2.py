@@ -37,7 +37,7 @@ def open_documentation() -> None:
 
 
 main.add_command(open_documentation,name="open_documentation")
-main.add_command(extract_kmers.main, name="extract_kmers")
+#main.add_command(extract_kmers.main, name="extract_kmers")
 main.add_command(db.run.main, name="db")
 main.add_command(query.main, name="query")
 main.add_command(query2.main,  name="query2")

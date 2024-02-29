@@ -14,15 +14,6 @@ from os.path import isdir, isfile, join as path_join
 from os.path import basename, normpath, splitext
 
 
-@click.command(
-    name="extract_kmers",
-    context_settings=CONTEXT_SETTINGS,
-    help="Generate oligonucleotides K-mers from FASTA",
-)
-@click.argument("input_path", metavar="INPUT_FASTA", type=click.Path(exists=True))
-@click.argument("output_path", metavar="OUTPUT_DIRECTORY", type=click.Path(exists=True))
-@click.argument("kmer_size", metavar="KMER_LENGTH", type=click.INT)
-@click.argument('gcfilter',metavar="GC_FILTER", type=click.BOOL)
 def main(input_path: str, output_path: str, kmer_size: int, gcfilter: bool) -> None:
     if not isfile(input_path):
         raise AssertionError
@@ -37,7 +28,7 @@ def main(input_path: str, output_path: str, kmer_size: int, gcfilter: bool) -> N
     logging.info(f"Extracted {len(oligos_list)} sequences")
 
 #    if (gcfilter==False):
-    if (not gcfilter):
+    if not gcfilter:
         logging.info(f"Skipped filtering on GC-content.")
         valid_oligos = oligos_list
     else:
@@ -58,3 +49,5 @@ def main(input_path: str, output_path: str, kmer_size: int, gcfilter: bool) -> N
 
     logging.info("Done. :thumbs_up: :smiley:")
     logging.shutdown()
+
+    return
